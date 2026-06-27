@@ -1,0 +1,28 @@
+{
+  "name": "linkforge",
+  "version": "1.0.0",
+  "description": "High-performance URL shortener with distributed ID generation, real-time analytics, and rate limiting",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test test/*.test.js",
+    "bench": "node test/bench.js",
+    "lint": "echo 'No linter configured'"
+  },
+  "keywords": [
+    "url-shortener",
+    "snowflake",
+    "analytics",
+    "rate-limiter"
+  ],
+  "author": "LinkForge",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0"
+  }
+}
